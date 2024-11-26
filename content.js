@@ -79,9 +79,9 @@ function getAverages() {
 }
 
 const HTML_SCRIPT = () => {
-    if (!document.getElementById("hs-ext-features")) {
-        let [avph, avpp] = getAverages();
+    let [avph, avpp] = getAverages();
 
+    if (!document.getElementById("hs-ext-features")) {
         shippedShipsHeader.insertAdjacentHTML("afterend", HTML_CONTENT(avph, avpp));
     }
 
@@ -90,13 +90,25 @@ const HTML_SCRIPT = () => {
         try {
             if (ship?.querySelector('.flex-grow > div')?.children?.length > 2) return;
 
-            const doubloonsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("doubloons"))?.[0]?.textContent ?? "";
             const hrsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("hrs"))?.[0]?.textContent ?? "";
-
-            if (!doubloonsText || !hrsText) return;
-
-            const doubloonsNum = Number(doubloonsText?.replace(" doubloons", "") ?? 0);
+            if (!hrsText) return;
             const hrsNum = Number(hrsText?.replace(" hrs", "") ?? 0);
+
+            if ([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("Pending: Vote to unlock payout!") || sp?.textContent?.endsWith("votes from other pirates…"))?.[0]) {
+                ship.querySelector(".flex-grow div")?.insertAdjacentHTML("beforeend", `
+                <span class="inline-flex items-center gap-1 rounded-full px-2 border text-sm leading-none text-green-600 bg-green-50 border-green-500/10 " style="vertical-align: middle;">
+                    <span class="inline-block py-1 text-gray-600">Expected:</span>
+                    <img alt="doubloons" loading="lazy" width="16" height="20" decoding="async" data-nimg="1" src="/_next/static/media/doubloon.fd63888b.svg" style="color: transparent;">
+                    <span class="inline-block py-1">${Math.round(hrsNum * avph)} doubloons</span>
+                </span>
+                `);
+                return;
+            }
+
+
+            const doubloonsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("doubloons"))?.[0]?.textContent ?? "";
+            if (!doubloonsText) return;
+            const doubloonsNum = Number(doubloonsText?.replace(" doubloons", "") ?? 0);
 
             const doubloonsMainElement = ship.querySelector(".flex-grow div span:nth-of-type(2)");
             let inHrsElement = doubloonsMainElement.cloneNode(true);
