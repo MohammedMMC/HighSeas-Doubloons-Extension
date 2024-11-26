@@ -23,7 +23,7 @@ let loaderInterval = setInterval(() => {
         lastLoadState = false;
     }
 
-    if (document?.querySelector('[id^="shipped-ship-"] .flex-grow > div')?.children?.length <= 2) {
+    if ([...document?.querySelectorAll('[id^="shipped-ship-"]:has(button)')].map(el => el?.querySelector(".flex-grow > div").children.length <= 2).includes(true)) {
         runCode();
     }
 }, 1000);
@@ -69,7 +69,7 @@ const HTML_CONTENT = (avph, avpp) => `
 const SVG_VOTES_ICON = `<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="18" height="18" style="display: inline-block; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm64 192c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32zm64-64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 192c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-192zM320 288c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32z"/></svg>`;
 
 function getAverages() {
-    let ships = [...document.querySelectorAll('[id^="shipped-ship-"]').values()];
+    let ships = [...document.querySelectorAll('[id^="shipped-ship-"]:has(button)').values()];
     const dhData = ships.map(ship => [
         Number([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("doubloons"))?.[0]?.textContent?.replace(" doubloons", "") ?? 0),
         Number([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("hrs"))?.[0]?.textContent?.replace(" hrs", "") ?? 0)
@@ -90,9 +90,12 @@ const HTML_SCRIPT = () => {
     const ships = document.querySelectorAll('[id^="shipped-ship-"]');
     ships.forEach(ship => {
         try {
+            if (ship?.querySelector('.flex-grow > div')?.children?.length > 2) return;
 
             const doubloonsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("doubloons"))?.[0]?.textContent ?? "";
             const hrsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("hrs"))?.[0]?.textContent ?? "";
+
+            if (!doubloonsText || !hrsText) return;
 
             const doubloonsNum = Number(doubloonsText?.replace(" doubloons", "") ?? 0);
             const hrsNum = Number(hrsText?.replace(" hrs", "") ?? 0);
