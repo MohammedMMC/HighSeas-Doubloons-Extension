@@ -35,11 +35,11 @@ const HTML_CONTENT = (avph, avpp) => `
         <span class="mr-2 text-xl font-semibold">Average: </span>
         <span class="inline-flex items-center gap-1 rounded-full px-2 border text-sm leading-none text-green-600 bg-green-50 border-green-500/10 " style="vertical-align: middle;">
             <img alt="doubloons" loading="lazy" width="16" height="20" decoding="async" data-nimg="1" src="/_next/static/media/doubloon.fd63888b.svg" style="color: transparent;">
-            <span class="inline-block py-1">${avph.toFixed(2)} / hour</span>
+            <span class="inline-block py-1">${avph?.toFixed(2)} / hour</span>
         </span>
         <span class="inline-flex items-center gap-1 rounded-full px-2 border text-sm leading-none text-green-600 bg-green-50 border-green-500/10 " style="vertical-align: middle;">
             <img alt="doubloons" loading="lazy" width="16" height="20" decoding="async" data-nimg="1" src="/_next/static/media/doubloon.fd63888b.svg" style="color: transparent;">
-            <span class="inline-block py-1">${avpp.toFixed(2)} / project</span>
+            <span class="inline-block py-1">${avpp?.toFixed(2)} / project</span>
         </span>
         <span class="inline-flex items-center gap-1 rounded-full px-2 border text-sm leading-none text-green-600 bg-green-50 border-green-500/10 " style="vertical-align: middle;">
             ${SVG_VOTES_ICON}
@@ -71,12 +71,12 @@ const SVG_VOTES_ICON = `<svg fill-rule="evenodd" clip-rule="evenodd" stroke-line
 function getAverages() {
     let ships = [...document.querySelectorAll('[id^="shipped-ship-"]').values()];
     const dhData = ships.map(ship => [
-        Number([...ship.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("doubloons"))[0].textContent.replace(" doubloons", "")),
-        Number([...ship.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("hrs"))[0].textContent.replace(" hrs", ""))
+        Number([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("doubloons"))?.[0]?.textContent?.replace(" doubloons", "") ?? 0),
+        Number([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("hrs"))?.[0]?.textContent?.replace(" hrs", "") ?? 0)
     ]);
     return [
-        dhData.map(([ph, pp]) => ph / pp).reduce((a, b) => a + b, 0) / ships.length,
-        dhData.reduce((a, b) => a + b[0], 0) / ships.length
+        (dhData.map(([ph, pp]) => ph / pp).reduce((a, b) => a + b, 0) / ships.length) ?? 0,
+        (dhData.reduce((a, b) => a + b[0], 0) / ships.length) ?? 0
     ]
 }
 
@@ -89,33 +89,36 @@ const HTML_SCRIPT = () => {
 
     const ships = document.querySelectorAll('[id^="shipped-ship-"]');
     ships.forEach(ship => {
-        const doubloonsText = [...ship.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("doubloons"))[0].textContent;
-        const hrsText = [...ship.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("hrs"))[0].textContent;
+        try {
 
-        const doubloonsNum = Number(doubloonsText.replace(" doubloons", ""));
-        const hrsNum = Number(hrsText.replace(" hrs", ""));
+            const doubloonsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("doubloons"))?.[0]?.textContent ?? "";
+            const hrsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("hrs"))?.[0]?.textContent ?? "";
 
-        const doubloonsMainElement = ship.querySelector(".flex-grow div span:nth-of-type(2)");
-        let inHrsElement = doubloonsMainElement.cloneNode(true);
-        let inHrsDoubloonsElement = [...inHrsElement.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("doubloons"))[0];
-        inHrsDoubloonsElement.textContent = `${(doubloonsNum / hrsNum).toFixed(2)} / hour`;
-        doubloonsMainElement.insertAdjacentElement("afterend", inHrsElement);
+            const doubloonsNum = Number(doubloonsText?.replace(" doubloons", "") ?? 0);
+            const hrsNum = Number(hrsText?.replace(" hrs", "") ?? 0);
 
-        const hrsMainElement = ship.querySelector(".flex-grow div span:nth-of-type(1)");
-        let votesElement = hrsMainElement.cloneNode(true);
-        let votesSvgElement = votesElement.querySelector("svg");
-        votesSvgElement.insertAdjacentHTML("afterend", SVG_VOTES_ICON);
-        votesSvgElement.remove();
+            const doubloonsMainElement = ship.querySelector(".flex-grow div span:nth-of-type(2)");
+            let inHrsElement = doubloonsMainElement.cloneNode(true);
+            let inHrsDoubloonsElement = [...inHrsElement.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("doubloons"))[0];
+            inHrsDoubloonsElement.textContent = `${(doubloonsNum / hrsNum).toFixed(2)} / hour`;
+            doubloonsMainElement.insertAdjacentElement("afterend", inHrsElement);
 
-        let votesSpanElement = [...votesElement.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("hrs"))[0];
-        votesSpanElement.textContent = `~${pointsToVotes(doubloonsNum / hrsNum)} Votes`;
-        inHrsElement.insertAdjacentElement("beforeBegin", votesElement);
+            const hrsMainElement = ship.querySelector(".flex-grow div span:nth-of-type(1)");
+            let votesElement = hrsMainElement.cloneNode(true);
+            let votesSvgElement = votesElement.querySelector("svg");
+            votesSvgElement.insertAdjacentHTML("afterend", SVG_VOTES_ICON);
+            votesSvgElement.remove();
 
+            let votesSpanElement = [...votesElement.querySelectorAll("span").values()].filter(sp => sp.textContent.endsWith("hrs"))[0];
+            votesSpanElement.textContent = `~${pointsToVotes(doubloonsNum / hrsNum)} Votes`;
+            inHrsElement.insertAdjacentElement("beforeBegin", votesElement);
+        } catch (err) {
+            console.hs("Error when loading!");
+        }
     });
 };
 
 function runCode() {
     HTML_SCRIPT();
     console.hs("Loaded!");
-
 }
