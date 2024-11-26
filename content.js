@@ -17,14 +17,12 @@ let loaderInterval = setInterval(() => {
         if (!lastLoadState) {
             lastLoadState = true;
             runCode();
+        } else if ([...document?.querySelectorAll('[id^="shipped-ship-"]:has(button)')].map(el => el?.querySelector(".flex-grow > div").children.length <= 2).includes(true)) {
+            runCode();
         }
     } else {
         shippedShipsHeader = null;
         lastLoadState = false;
-    }
-
-    if ([...document?.querySelectorAll('[id^="shipped-ship-"]:has(button)')].map(el => el?.querySelector(".flex-grow > div").children.length <= 2).includes(true)) {
-        runCode();
     }
 }, 1000);
 
