@@ -56,7 +56,7 @@ const HTML_CONTENT = (avph, avpp) => `
         position: absolute;
         top: 6px;
         left: 10px;
-        font-family: cursive;
+        font-family: var(--font-main), serif, cursive;
         font-size: 12.5px;
         font-weight: 200;
         color: #e5bf36;
