@@ -94,7 +94,7 @@ const HTML_SCRIPT = () => {
             if (!hrsText) return;
             const hrsNum = Number(hrsText?.replace(" hrs", "") ?? 0);
 
-            if ([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("Pending: Vote to unlock payout!") || sp?.textContent?.endsWith("votes from other pirates…"))?.[0]) {
+            if ([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("Pending: Vote to unlock payout!") || sp?.textContent?.endsWith("from other pirates…"))?.[0]) {
                 ship.querySelector(".flex-grow div")?.insertAdjacentHTML("beforeend", `
                 <span class="inline-flex items-center gap-1 rounded-full px-2 border text-sm leading-none text-green-600 bg-green-50 border-green-500/10 " style="vertical-align: middle;">
                     <span class="inline-block py-1 text-gray-600">Expected:</span>
