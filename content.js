@@ -88,7 +88,7 @@ const HTML_SCRIPT = () => {
     const ships = document.querySelectorAll('[id^="shipped-ship-"]');
     ships.forEach(ship => {
         try {
-            if (ship?.querySelector('.flex-grow > div')?.children?.length > 2) return;
+            if (ship?.querySelector('.flex-grow > div')?.children?.length > ([...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("update"))?.[0] ? 3 : 2)) return;
 
             const hrsText = [...ship.querySelectorAll("span").values()]?.filter(sp => sp?.textContent?.endsWith("hrs"))?.[0]?.textContent ?? "";
             if (!hrsText) return;
