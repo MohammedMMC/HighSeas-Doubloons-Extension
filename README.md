@@ -16,14 +16,17 @@ Now, I can focus more on building projects without the hassle of manual calculat
 ## Features
 
 1. **Doubloons Per Hour Calculation**
-    - Dispays how many Doubloons you earned per hour for each project.
+    - Displays how many Doubloons you earned per hour for each project.
     - Adds the total number of votes received (not 100% accurate! :'<).
 
 2. **Average Calculations**
    - Calculates the average Doubloons earned per hour across all projects.
    - Calculates the average Doubloons and votes across all projects.
 
-3. **Prize Time Estimation** *(New Feature Coming Soon!)*
+3. **Expected Doubloons To Earn**
+   - While your project is pending, the extension estimates how many Doubloons you might earn.
+
+4. **Prize Time Estimation** *(New Feature Coming Soon!)*
    - Select prizes, and the extension will calculate how much time you need to earn them based on your average Doubloons.
 
 
