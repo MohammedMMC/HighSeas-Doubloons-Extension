@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9FB4A0F2CF8865D0018232F /* HighSeas Doubloons Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A9FB4A0E2CF8865D0018232F /* HighSeas Doubloons Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9FB4A192CF8865D0018232F /* HighSeas Doubloons Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A9FB4A182CF8865D0018232F /* HighSeas Doubloons Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9FB4A102CF8865D0018232F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9FB49D42CF8864F0018232F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9FB4A0D2CF8865D0018232F;
+			remoteInfo = "HighSeas Doubloons Extension (iOS)";
+		};
+		A9FB4A1A2CF8865D0018232F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9FB49D42CF8864F0018232F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9FB4A172CF8865D0018232F;
+			remoteInfo = "HighSeas Doubloons Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9FB4A422CF8865D0018232F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9FB4A0F2CF8865D0018232F /* HighSeas Doubloons Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A4C2CF8865D0018232F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9FB4A192CF8865D0018232F /* HighSeas Doubloons Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9FB49F02CF8865C0018232F /* HighSeas Doubloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HighSeas Doubloons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FB4A022CF8865C0018232F /* HighSeas Doubloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HighSeas Doubloons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FB4A0E2CF8865D0018232F /* HighSeas Doubloons Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HighSeas Doubloons Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FB4A182CF8865D0018232F /* HighSeas Doubloons Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HighSeas Doubloons Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A9FB4A3D2CF8865D0018232F /* Exceptions for "Shared (App)" folder in "HighSeas Doubloons (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = A9FB49EF2CF8865C0018232F /* HighSeas Doubloons (iOS) */;
+		};
+		A9FB4A412CF8865D0018232F /* Exceptions for "iOS (Extension)" folder in "HighSeas Doubloons Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A9FB4A0D2CF8865D0018232F /* HighSeas Doubloons Extension (iOS) */;
+		};
+		A9FB4A462CF8865D0018232F /* Exceptions for "iOS (App)" folder in "HighSeas Doubloons (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A9FB49EF2CF8865C0018232F /* HighSeas Doubloons (iOS) */;
+		};
+		A9FB4A472CF8865D0018232F /* Exceptions for "Shared (App)" folder in "HighSeas Doubloons (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = A9FB4A012CF8865C0018232F /* HighSeas Doubloons (macOS) */;
+		};
+		A9FB4A4B2CF8865D0018232F /* Exceptions for "macOS (Extension)" folder in "HighSeas Doubloons Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A9FB4A172CF8865D0018232F /* HighSeas Doubloons Extension (macOS) */;
+		};
+		A9FB4A502CF8865D0018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				"Resources/Privacy Policy.md",
+				SafariWebExtensionHandler.swift,
+			);
+			target = A9FB4A0D2CF8865D0018232F /* HighSeas Doubloons Extension (iOS) */;
+		};
+		A9FB4A512CF8865D0018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				"Resources/Privacy Policy.md",
+				SafariWebExtensionHandler.swift,
+			);
+			target = A9FB4A172CF8865D0018232F /* HighSeas Doubloons Extension (macOS) */;
+		};
+		A9FB4A592CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Resources/Privacy Policy.md",
+			);
+			target = A9FB49EF2CF8865C0018232F /* HighSeas Doubloons (iOS) */;
+		};
+		A9FB4A5A2CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Resources/Privacy Policy.md",
+			);
+			target = A9FB4A012CF8865C0018232F /* HighSeas Doubloons (macOS) */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A9FB49D82CF886500018232F /* Shared (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A9FB4A3D2CF8865D0018232F /* Exceptions for "Shared (App)" folder in "HighSeas Doubloons (iOS)" target */,
+				A9FB4A472CF8865D0018232F /* Exceptions for "Shared (App)" folder in "HighSeas Doubloons (macOS)" target */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		A9FB49E12CF8865C0018232F /* Shared (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A9FB4A592CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (iOS)" target */,
+				A9FB4A5A2CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (macOS)" target */,
+				A9FB4A502CF8865D0018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons Extension (iOS)" target */,
+				A9FB4A512CF8865D0018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons Extension (macOS)" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		A9FB49F22CF8865C0018232F /* iOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A9FB4A462CF8865D0018232F /* Exceptions for "iOS (App)" folder in "HighSeas Doubloons (iOS)" target */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		A9FB4A032CF8865C0018232F /* macOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		A9FB4A122CF8865D0018232F /* iOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A9FB4A412CF8865D0018232F /* Exceptions for "iOS (Extension)" folder in "HighSeas Doubloons Extension (iOS)" target */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		A9FB4A1C2CF8865D0018232F /* macOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A9FB4A4B2CF8865D0018232F /* Exceptions for "macOS (Extension)" folder in "HighSeas Doubloons Extension (macOS)" target */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9FB49ED2CF8865C0018232F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB49FF2CF8865C0018232F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A0B2CF8865D0018232F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A152CF8865D0018232F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9FB49D32CF8864F0018232F = {
+			isa = PBXGroup;
+			children = (
+				A9FB49D82CF886500018232F /* Shared (App) */,
+				A9FB49E12CF8865C0018232F /* Shared (Extension) */,
+				A9FB49F22CF8865C0018232F /* iOS (App) */,
+				A9FB4A032CF8865C0018232F /* macOS (App) */,
+				A9FB4A122CF8865D0018232F /* iOS (Extension) */,
+				A9FB4A1C2CF8865D0018232F /* macOS (Extension) */,
+				A9FB49F12CF8865C0018232F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9FB49F12CF8865C0018232F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9FB49F02CF8865C0018232F /* HighSeas Doubloons.app */,
+				A9FB4A022CF8865C0018232F /* HighSeas Doubloons.app */,
+				A9FB4A0E2CF8865D0018232F /* HighSeas Doubloons Extension.appex */,
+				A9FB4A182CF8865D0018232F /* HighSeas Doubloons Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9FB49EF2CF8865C0018232F /* HighSeas Doubloons (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FB4A432CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons (iOS)" */;
+			buildPhases = (
+				A9FB49EC2CF8865C0018232F /* Sources */,
+				A9FB49ED2CF8865C0018232F /* Frameworks */,
+				A9FB49EE2CF8865C0018232F /* Resources */,
+				A9FB4A422CF8865D0018232F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9FB4A112CF8865D0018232F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A9FB49F22CF8865C0018232F /* iOS (App) */,
+			);
+			name = "HighSeas Doubloons (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "HighSeas Doubloons (iOS)";
+			productReference = A9FB49F02CF8865C0018232F /* HighSeas Doubloons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9FB4A012CF8865C0018232F /* HighSeas Doubloons (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FB4A4D2CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons (macOS)" */;
+			buildPhases = (
+				A9FB49FE2CF8865C0018232F /* Sources */,
+				A9FB49FF2CF8865C0018232F /* Frameworks */,
+				A9FB4A002CF8865C0018232F /* Resources */,
+				A9FB4A4C2CF8865D0018232F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9FB4A1B2CF8865D0018232F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A9FB4A032CF8865C0018232F /* macOS (App) */,
+			);
+			name = "HighSeas Doubloons (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "HighSeas Doubloons (macOS)";
+			productReference = A9FB4A022CF8865C0018232F /* HighSeas Doubloons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9FB4A0D2CF8865D0018232F /* HighSeas Doubloons Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FB4A3E2CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons Extension (iOS)" */;
+			buildPhases = (
+				A9FB4A0A2CF8865D0018232F /* Sources */,
+				A9FB4A0B2CF8865D0018232F /* Frameworks */,
+				A9FB4A0C2CF8865D0018232F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A9FB4A122CF8865D0018232F /* iOS (Extension) */,
+			);
+			name = "HighSeas Doubloons Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "HighSeas Doubloons Extension (iOS)";
+			productReference = A9FB4A0E2CF8865D0018232F /* HighSeas Doubloons Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A9FB4A172CF8865D0018232F /* HighSeas Doubloons Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FB4A482CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons Extension (macOS)" */;
+			buildPhases = (
+				A9FB4A142CF8865D0018232F /* Sources */,
+				A9FB4A152CF8865D0018232F /* Frameworks */,
+				A9FB4A162CF8865D0018232F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A9FB4A1C2CF8865D0018232F /* macOS (Extension) */,
+			);
+			name = "HighSeas Doubloons Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "HighSeas Doubloons Extension (macOS)";
+			productReference = A9FB4A182CF8865D0018232F /* HighSeas Doubloons Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9FB49D42CF8864F0018232F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					A9FB49EF2CF8865C0018232F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					A9FB4A012CF8865C0018232F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					A9FB4A0D2CF8865D0018232F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					A9FB4A172CF8865D0018232F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = A9FB49D72CF8864F0018232F /* Build configuration list for PBXProject "HighSeas Doubloons" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9FB49D32CF8864F0018232F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A9FB49F12CF8865C0018232F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9FB49EF2CF8865C0018232F /* HighSeas Doubloons (iOS) */,
+				A9FB4A012CF8865C0018232F /* HighSeas Doubloons (macOS) */,
+				A9FB4A0D2CF8865D0018232F /* HighSeas Doubloons Extension (iOS) */,
+				A9FB4A172CF8865D0018232F /* HighSeas Doubloons Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9FB49EE2CF8865C0018232F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A002CF8865C0018232F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A0C2CF8865D0018232F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A162CF8865D0018232F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9FB49EC2CF8865C0018232F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB49FE2CF8865C0018232F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A0A2CF8865D0018232F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FB4A142CF8865D0018232F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9FB4A112CF8865D0018232F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9FB4A0D2CF8865D0018232F /* HighSeas Doubloons Extension (iOS) */;
+			targetProxy = A9FB4A102CF8865D0018232F /* PBXContainerItemProxy */;
+		};
+		A9FB4A1B2CF8865D0018232F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9FB4A172CF8865D0018232F /* HighSeas Doubloons Extension (macOS) */;
+			targetProxy = A9FB4A1A2CF8865D0018232F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9FB4A3F2CF8865D0018232F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons.Extension";
+				PRODUCT_NAME = "HighSeas Doubloons Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9FB4A402CF8865D0018232F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons.Extension";
+				PRODUCT_NAME = "HighSeas Doubloons Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9FB4A442CF8865D0018232F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons";
+				PRODUCT_NAME = "HighSeas Doubloons";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9FB4A452CF8865D0018232F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons";
+				PRODUCT_NAME = "HighSeas Doubloons";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9FB4A492CF8865D0018232F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons.Extension";
+				PRODUCT_NAME = "HighSeas Doubloons Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9FB4A4A2CF8865D0018232F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons.Extension";
+				PRODUCT_NAME = "HighSeas Doubloons Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A9FB4A4E2CF8865D0018232F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons";
+				PRODUCT_NAME = "HighSeas Doubloons";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9FB4A4F2CF8865D0018232F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8626DL2GW3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neon443.HighSeas-Doubloons";
+				PRODUCT_NAME = "HighSeas Doubloons";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A9FB4A522CF8865D0018232F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9FB4A532CF8865D0018232F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9FB49D72CF8864F0018232F /* Build configuration list for PBXProject "HighSeas Doubloons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FB4A522CF8865D0018232F /* Debug */,
+				A9FB4A532CF8865D0018232F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FB4A3E2CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FB4A3F2CF8865D0018232F /* Debug */,
+				A9FB4A402CF8865D0018232F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FB4A432CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FB4A442CF8865D0018232F /* Debug */,
+				A9FB4A452CF8865D0018232F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FB4A482CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FB4A492CF8865D0018232F /* Debug */,
+				A9FB4A4A2CF8865D0018232F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FB4A4D2CF8865D0018232F /* Build configuration list for PBXNativeTarget "HighSeas Doubloons (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FB4A4E2CF8865D0018232F /* Debug */,
+				A9FB4A4F2CF8865D0018232F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9FB49D42CF8864F0018232F /* Project object */;
+}
