@@ -385,7 +385,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9FB49D72CF8864F0018232F /* Build configuration list for PBXProject "HighSeas Doubloons" */;
+			buildConfigurationList = A9FB49D72CF8864F0018232F /* Build configuration list for PBXProject "Safari_HighSeasDoubloons" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -491,7 +491,7 @@
 				DEVELOPMENT_TEAM = 8626DL2GW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +522,7 @@
 				DEVELOPMENT_TEAM = 8626DL2GW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -624,14 +624,14 @@
 		A9FB4A492CF8865D0018232F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Safari_HighSeasDoubloons.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8626DL2GW3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,14 +656,14 @@
 		A9FB4A4A2CF8865D0018232F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Safari_HighSeasDoubloons.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8626DL2GW3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "HighSeas Doubloons";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,7 +690,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS (App)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Safari_HighSeasDoubloons.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8626DL2GW3;
@@ -724,7 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS (App)/HighSeas Doubloons.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Safari_HighSeasDoubloons.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8626DL2GW3;
@@ -870,7 +870,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9FB49D72CF8864F0018232F /* Build configuration list for PBXProject "HighSeas Doubloons" */ = {
+		A9FB49D72CF8864F0018232F /* Build configuration list for PBXProject "Safari_HighSeasDoubloons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9FB4A522CF8865D0018232F /* Debug */,

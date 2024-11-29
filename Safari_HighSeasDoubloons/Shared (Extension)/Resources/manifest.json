@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "default_locale": "en",
 
-    "name": "Safari HighSeas Doubloons",
+    "name": "HighSeas Doubloons",
     "description": "A simple extension that adds some new features to the HighSeas-Shipyard page",
     "version": "1.0.1",
 
