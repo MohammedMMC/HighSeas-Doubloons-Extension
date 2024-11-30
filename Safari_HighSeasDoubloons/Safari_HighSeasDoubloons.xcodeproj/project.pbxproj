@@ -125,7 +125,6 @@
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,
-				"Resources/Privacy Policy.md",
 				SafariWebExtensionHandler.swift,
 			);
 			target = A9FB4A0D2CF8865D0018232F /* HighSeas Doubloons Extension (iOS) */;
@@ -141,24 +140,9 @@
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,
-				"Resources/Privacy Policy.md",
 				SafariWebExtensionHandler.swift,
 			);
 			target = A9FB4A172CF8865D0018232F /* HighSeas Doubloons Extension (macOS) */;
-		};
-		A9FB4A592CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Resources/Privacy Policy.md",
-			);
-			target = A9FB49EF2CF8865C0018232F /* HighSeas Doubloons (iOS) */;
-		};
-		A9FB4A5A2CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (macOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Resources/Privacy Policy.md",
-			);
-			target = A9FB4A012CF8865C0018232F /* HighSeas Doubloons (macOS) */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -175,8 +159,6 @@
 		A9FB49E12CF8865C0018232F /* Shared (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A9FB4A592CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (iOS)" target */,
-				A9FB4A5A2CF88BE60018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons (macOS)" target */,
 				A9FB4A502CF8865D0018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons Extension (iOS)" target */,
 				A9FB4A512CF8865D0018232F /* Exceptions for "Shared (Extension)" folder in "HighSeas Doubloons Extension (macOS)" target */,
 			);
