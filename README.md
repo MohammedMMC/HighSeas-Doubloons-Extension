@@ -4,6 +4,15 @@
 I use Safari as my primary browser, and I wanted to use this extension without switching to Chrome.
 pretty simple lol
 
+## Build instructions
+1. Requirements: macOS, Xcode, Safari, iOS Device (Optional)
+2. `git clone https://github.com/neon443/Safari_HighSeas_Doubloons.git; cd Safari_HighSeas_Doubloons/Safari_HighSeas_Doubloons`
+3. `open Xcode.app Safari_HighSeas_Doubloons.xcodeproj`
+4. For each target, select your Team ID and change Bundle ID if necessary.
+5. Product -> Destination -> Select Device/Simulator
+6. Cmd + R to run
+7. Enable the extension in Safari Preferences -> Extensions or iOS Settings -> Safari -> Extensions
+
 This project is a browser extension that enhances the experience on the [Hack Club High Seas Shipyard](https://highseas.hackclub.com/shipyard) website by adding useful features and visual updates.
 
 
