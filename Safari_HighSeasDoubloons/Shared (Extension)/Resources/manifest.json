@@ -1,33 +1,36 @@
 {
-    "manifest_version": 3,
-    "default_locale": "en",
+	"manifest_version": 3,
+	"default_locale": "en",
 
-    "name": "HighSeas Doubloons",
-    "description": "A simple extension that adds some new features to the HighSeas-Shipyard page",
-    "version": "1.0.1",
+	"name": "HighSeas Doubloons",
+	"description": "A simple extension that adds some new features to the HighSeas-Shipyard page",
+	"version": "1.0.1",
 
-    "icons": {
-        "16": "images/icon.svg",
-        "96": "images/icon.svg",
-        "128": "images/icon.svg",
-        "256": "images/icon.svg",
-        "512": "images/icon.svg"
-    },
+	"icons": {
+		"16": "images/icon.svg",
+		"96": "images/icon.svg",
+		"128": "images/icon.svg",
+		"256": "images/icon.svg",
+		"512": "images/icon.svg"
+	},
 
-    "background": {
-        "scripts": [ "background.js" ],
-        "type": "module"
-    },
+	"background": {
+		"scripts": [ "background.js" ],
+		"type": "module"
+	},
 
-    "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "https://highseas.hackclub.com/*" ]
-    }],
+	"content_scripts": [{
+		"js": [ "content.js" ],
+		"matches": [
+			"https://highseas.hackclub.com/*",
+			"https://high-seas.hackclub.dev/*"
+		]
+	}],
 
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": "images/toolbar-icon.png"
-    },
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "images/toolbar-icon.png"
+	},
 
-    "permissions": [ ]
+	"permissions": [ ]
 }

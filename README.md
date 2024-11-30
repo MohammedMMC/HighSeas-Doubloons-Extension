@@ -1,4 +1,8 @@
-# High Seas Doubloons Extension
+# High Seas Doubloons Safari Extension
+
+## Why I ported this extension to Safari
+I use Safari as my primary browser, and I wanted to use this extension without switching to Chrome.
+pretty simple lol
 
 This project is a browser extension that enhances the experience on the [Hack Club High Seas Shipyard](https://highseas.hackclub.com/shipyard) website by adding useful features and visual updates.
 
