@@ -40,6 +40,11 @@ _A perview image shows the added features._
 3. Enable **Developer Mode**.
 4. Click **Load unpacked** and select the folder containing this extension.
 
+## Usage
+
+1. After installing, open the [Hack Club High Seas Shipyard](https://highseas.hackclub.com/shipyard).
+2. The extension will automatically enhance the page, displaying the new features.
+
 ## Why I Made This Project
 
 Each time I ship a project, I find myself wondering how much people voted for me and how many Doubloons I earned per hour.
@@ -48,8 +53,3 @@ which was time-consuming and repetitive.
 
 To solve this problem, I created this extension to automate the calculations and provide the information at a glance.
 Now, I can focus more on building projects without the hassle of manual calculations.
-
-## Usage
-
-1. After installing, open the [Hack Club High Seas Shipyard](https://highseas.hackclub.com/shipyard).
-2. The extension will automatically enhance the page, displaying the new features.
