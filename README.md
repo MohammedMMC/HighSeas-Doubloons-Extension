@@ -9,14 +9,10 @@ This project is a browser extension that enhances the experience on the [Hack Cl
 
 ---
 
-## Why I Made This Project
+## Preview
 
-Each time I ship a project, I find myself wondering how much people voted for me and how many Doubloons I earned per hour.
-This led me to manually calculate these values every time I ship a project,
-which was time-consuming and repetitive.
-
-To solve this problem, I created this extension to automate the calculations and provide the information at a glance.
-Now, I can focus more on building projects without the hassle of manual calculations.
+![Extension Preview](./view.jpg)
+_A perview image shows the added features._
 
 ## Features
 
@@ -37,17 +33,21 @@ Now, I can focus more on building projects without the hassle of manual calculat
 4. **Prize Time Estimation** _(New Feature Coming Soon!)_
    - Select prizes, and the extension will calculate how much time you need to earn them based on your average Doubloons.
 
-## Preview
-
-![Extension Preview](./view.jpg)
-_A perview image shows the added features._
-
 ## Installation
 
 1. Download this repository.
 2. Open your browser and navigate to `chrome://extensions/` (or equivalent for your browser).
 3. Enable **Developer Mode**.
 4. Click **Load unpacked** and select the folder containing this extension.
+
+## Why I Made This Project
+
+Each time I ship a project, I find myself wondering how much people voted for me and how many Doubloons I earned per hour.
+This led me to manually calculate these values every time I ship a project,
+which was time-consuming and repetitive.
+
+To solve this problem, I created this extension to automate the calculations and provide the information at a glance.
+Now, I can focus more on building projects without the hassle of manual calculations.
 
 ## Usage
 
