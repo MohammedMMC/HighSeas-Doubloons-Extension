@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "HighSeas Doubloons",
   "extension_id": "mohammed5mmc@gmail.com",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "description": "A simple extension that adds some new features to the HighSeas-Shipyard page",
   "permissions": [
     "scripting",
