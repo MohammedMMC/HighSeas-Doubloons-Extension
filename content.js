@@ -1,7 +1,19 @@
-console.hs = (...args) => console.log("HighSeas Doubloons Extension:", ...args);
+const DEBUGGING = false;
+
+console.hs = (...args) => DEBUGGING ? console.log("HighSeas Doubloons Extension:", ...args) : null;
 
 const isThisShipyard = () => window.location.href.includes("shipyard");
 const pointsToVotes = (points) => Math.round(((points - 0.5) * 10) / 24.5);
+const votesToPoints = (votes) => Math.round((votes * 24.5) / 10 + 0.5);
+function getExpected(avph) {
+    let avgVotes = pointsToVotes(avph);
+    let minVotes = avgVotes - 1;
+    let maxVotes = avgVotes + 2;
+    if (minVotes < 0) minVotes = 0;
+    if (maxVotes > 10) maxVotes = 10;
+
+    return [votesToPoints(minVotes), votesToPoints(maxVotes)];
+}
 
 console.hs("Loading...");
 /**@type {HTMLHeadingElement} */
@@ -99,7 +111,7 @@ const HTML_SCRIPT = () => {
                 <span class="inline-flex items-center gap-1 rounded-full px-2 border text-sm leading-none text-green-600 bg-green-50 border-green-500/10 " style="vertical-align: middle;">
                     <span class="inline-block py-1 text-gray-600">Expected:</span>
                     <img alt="doubloons" loading="lazy" width="16" height="20" decoding="async" data-nimg="1" src="/_next/static/media/doubloon.fd63888b.svg" style="color: transparent;">
-                    <span class="inline-block py-1">${Math.round(hrsNum * avph)} doubloons</span>
+                    <span class="inline-block py-1">${getExpected(avph).map(vts => Math.round(hrsNum * vts)).join(" - ")} doubloons</span>
                 </span>
                 `);
                 return;
